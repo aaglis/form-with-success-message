@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="sucess.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  
+  <main class="container-main">
+      <div class="container-left">
+        <article class="container-titulo">
+            <h1 class="titulo-principal">Stay updated!</h1>
+            <p class="primeiro-texto">Join 60,000+ product managers receiveing monthly updates on:</p>
+        </article>
+        
+        <article class="container-list">
+          <div class="agrupamento-list">
+            <img src="/assets/images/icon-list.svg" alt="" class="img-list">
+            <p class="paragrafo-list">Product discovery and building what matters</p>
+          </div>
+
+          <div class="agrupamento-list">
+            <img src="/assets/images/icon-list.svg" alt="" class="img-list">
+            <p class="paragrafo-list">Measuring to ensure updates are a success</p>
+          </div>
+          
+          <div class="agrupamento-list">
+            <img src="/assets/images/icon-list.svg" alt="" class="img-list">
+            <p class="paragrafo-list">And much more!</p>
+          </div>
+        </article>
+
+        <article class="container-email">
+          <div class="agrupamento-alert">
+            <p class="p-alert">Valid email required</p>
+          <label for="email" class="email-label">Email address</label>
+        </div>
+        <input type="email" class="input" placeholder="email@company.com">
+        <p class="email-required"></p>
+        <button type="submit" class="btn-enviar" onclick="verificarEmail()">Subscribe to monthly newsletter</button>
+        </article>
+      </div>
+      
+      <nav class="container-right">
+        <div class="container-img">
+          <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" class="img">
+        </div>
+      </nav>
+    </main>
+    <div class="loader">
+      <img src="/assets/images/loader.gif" alt="" class="gif-loader">
+    </div>
+    <main class="container-main2">
+      <aside class="agrupamento-checked">
+        <div class="container-checked-img">
+          <img src="/assets/images/icon-success.svg" alt="" class="img-checked">
+        </div>
+
+        <div class="container-title-checked">
+          <h1 class="checked-title">Thanks for subscribing!</h1>
+        </div>
+
+        <div class="container-p">
+          <p class="checked-p"></p>
+        </div>
+
+        <div class="container-btn">
+          <button type="submit" class="btn-enviar checked-btn" onclick="returnToStart()">Dismiss message</button>
+        </div>
+      </aside>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>

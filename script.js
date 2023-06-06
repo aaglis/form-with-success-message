@@ -63,9 +63,6 @@ function returnToStart() {
   window.location.reload()
 }
 
-function imgMedia() {
-}
-
 var divImg = document.querySelector('.container-img')
 var existantImg = document.querySelector('.img')
 var img = document.createElement("img");
@@ -73,14 +70,17 @@ img.src= "assets/images/illustration-sign-up-mobile.svg";
 img.style.display = "none"
 img.classList.add('img')
 divImg.appendChild(img);
-if(window.matchMedia("(max-width: 375px)")) {
-  img.style.display = "flex"
-  existantImg.style.display = "none"
-}
+
+// responsive mobile 375px
 if (window.matchMedia("(min-width: 376px)")){
-  console.log("!375")
+  console.log("375+")
   img.style.display = "none"
   existantImg.style.display = "flex"
+}
+if(window.matchMedia("(max-width: 375px)")) {
+  console.log("375")
+  img.style.display = "flex"
+  existantImg.style.display = "none"
 }
 
 

@@ -27,8 +27,6 @@ function hideLoader() {
   div.style.display = "none"
 
 }
-
-console.log(validatorEmail("aglissilva@gmail.com"))
 botaoAlert.onclick = function() {
   var input = document.querySelector('.input')
   if(input.value == '') {
@@ -63,25 +61,13 @@ function returnToStart() {
   window.location.reload()
 }
 
+
+//create a new element in html to add a image from mobile devices
 var divImg = document.querySelector('.container-img')
-var existantImg = document.querySelector('.img')
 var img = document.createElement("img");
 img.src= "assets/images/illustration-sign-up-mobile.svg";
-img.style.display = "none"
-img.classList.add('img')
+img.classList.add('img-sec')
 divImg.appendChild(img);
-
-// responsive mobile 375px
-if (window.matchMedia("(min-width: 376px)")){
-  console.log("375+")
-  img.style.display = "none"
-  existantImg.style.display = "flex"
-}
-if(window.matchMedia("(max-width: 375px)")) {
-  console.log("375")
-  img.style.display = "flex"
-  existantImg.style.display = "none"
-}
 
 
 

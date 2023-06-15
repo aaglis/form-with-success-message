@@ -138,12 +138,18 @@ body {
   display: flex;
 }
 
+
 .img {
+  display: flex;
   height: 93%;
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
   left: 3.3rem;
+}
+
+.img-sec{
+  display: none;
 }
 
 .agrupamento-alert {

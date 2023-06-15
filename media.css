@@ -9,7 +9,12 @@
     width: 95%;
     left: 1rem;
   }
+  
   .img {
+    display: none;
+  }
+  
+  .img-sec {
     display: flex;
     margin-left: auto;
     left: 0;
@@ -17,6 +22,7 @@
     width: 100%;
     border-radius: 1.7rem;
   }
+
 
   .titulo-principal {
     font-size: 2.5rem;
